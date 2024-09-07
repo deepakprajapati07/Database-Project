@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Employee Data</title>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="title">
+      <h1>ModernTech Employee Central Database</h1>
+      <h2>Delete Employee Data</h2>
+    </div>
+
+    <div class="employeeID_display">
+      <h3><span id="employeeID"></span></h3>
+    </div>
+
+    <form
+      action="/deleteEmployee"
+      method="post"
+      id="deleteForm"
+      class="formView"
+    >
+      <div class="employeeID">
+        <label for="">Employee ID</label>
+        <input
+          type="text"
+          placeholder="Employee ID"
+          id="employeeID"
+          name="employee_ID"
+        />
+      </div>
+
+      <div class="submitBtn">
+        <button class="button button-primary" id="deleteBtn" type="button">
+          Delete
+        </button>
+      </div>
+    </form>
+
+    <div id="footer"></div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!--JS-->
+    <script src="./JS/script.js"></script>
+    <script src="./JS/communication.js"></script>
+  </body>
+</html>

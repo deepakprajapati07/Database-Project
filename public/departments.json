@@ -1,0 +1,14 @@
+{
+  "departments": [
+    { "value": "BOD", "label": "Board of Directors" },
+    { "value": "IT", "label": "Information & Technology" },
+    { "value": "HR", "label": "Human Resource" },
+    { "value": "AF", "label": "Accounting & Finance" },
+    { "value": "SM", "label": "Sales & Marketing" },
+    { "value": "DS", "label": "UI / UX Design" },
+    { "value": "BD", "label": "Business Development" },
+    { "value": "R&D", "label": "Research & Development" },
+    { "value": "LAW", "label": "Legal" },
+    { "value": "SSD", "label": "Supporting Staffs Department" }
+  ]
+}

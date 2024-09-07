@@ -1,0 +1,89 @@
+/* Header & Footer Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 4rem 1rem 5rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.title h1 {
+  font-size: 40px;
+}
+
+.employeeID_display h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+} 
+
+.title h2 {
+  font-size: 30px;
+  margin-top: 3rem;
+}
+
+.commonElement {
+  background-color: rgb(35, 65, 109);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.element {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.element a {
+  text-decoration: none;
+  color: white;
+}
+
+.displayResult {
+  width: 96%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+table {
+  border: 2px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+td,
+th {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid black;
+  width: 250px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #04aa6d;
+  color: white;
+  height: 50px;
+}
+
+/* td{
+} */
+
+@media screen and (max-width: 600px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
+  }
+}

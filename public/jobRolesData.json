@@ -1,0 +1,47 @@
+{
+  "BOD": [
+    { "full": "Chief Executive Officer", "short": "CEO" },
+    { "full": "Director", "short": "DR" }
+  ],
+  "IT": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Project Manager", "short": "PM" },
+    { "full": "Software Developer", "short": "SDE" },
+    { "full": "QA Specialist", "short": "QAS" },
+    { "full": "Data Analyst", "short": "DA" }
+  ],
+  "DS": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Graphic Designer", "short": "GD" }
+  ],
+
+  "HR": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "HR Associate", "short": "HRA" }
+  ],
+  "SM": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Marketing Associate", "short": "MA" },
+    { "full": "Sales Associate", "short": "SA" }
+  ],
+  "AF": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Accountant", "short": "AC" }
+  ],
+  "BD": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Business Analyst", "short": "BA" }
+  ],
+  "R&D": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Researcher", "short": "RS" }
+  ],
+  "LAW": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Lawyer", "short": "LW" }
+  ],
+  "SSD": [
+    { "full": "Department Manager", "short": "DM" },
+    { "full": "Support Staff", "short": "SS" }
+  ]
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Employee</title>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="title">
+      <h1>ModernTech Employee Central Database</h1>
+      <h2>Add Employee</h2>
+    </div>
+
+    <div class="employeeID_display">
+      <h3><span id="employeeID"></span></h3>
+    </div>
+
+    <form action="/addEmployee" method="post" id="addForm">
+      <div class="section">
+        <div class="field">
+          <label for="">First Name</label>
+          <input
+            type="text"
+            placeholder="First Name"
+            id="fName"
+            name="fName"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="">Gender</label>
+          <select name="sex" id="sex" required>
+            <option value="" selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="">Phone Number</label>
+          <input
+            type="text"
+            placeholder="Phone Number"
+            id="phone"
+            name="phone"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="">Department</label>
+          <select name="department_ID" id="department" required>
+            <option value="" selected>Select Department</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="">Job Role</label>
+          <select name="jobRole_ID" id="jobRole" required>
+            <option value="" selected>Select Job Role</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="">Date of Joining</label>
+          <input
+            type="date"
+            placeholder="Date of Joining"
+            id="joining_date"
+            name="joining_date"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="field">
+          <label for="">Last Name</label>
+          <input type="text" placeholder="Last Name" id="lName" name="lName" />
+        </div>
+        <div class="field">
+          <label for="">Date of Birth</label>
+          <input
+            type="date"
+            placeholder="Date of Birth"
+            id="dob"
+            name="dob"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="">Email</label>
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="">Address</label>
+          <input
+            type="text"
+            placeholder="Address"
+            id="address"
+            name="address"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="">Salary</label>
+          <input
+            type="number"
+            placeholder="Salary"
+            id="salary"
+            name="salary"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="">Project</label>
+          <select name="project_ID" id="project">
+            <option value="" selected>Select Project</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+      </div>
+
+      <div class="submitBtn">
+        <button class="button button-primary" id="addBtn" type="button">
+          Add
+        </button>
+      </div>
+    </form>
+
+    <div id="footer"></div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!--JS-->
+    <script src="./JS/script.js"></script>
+    <script src="./JS/dropdown.js"></script>
+    <script src="./JS/communication.js"></script>
+  </body>
+</html>

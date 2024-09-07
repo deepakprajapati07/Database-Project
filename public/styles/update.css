@@ -1,0 +1,58 @@
+/* Update Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 3rem 1rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.title h1 {
+  font-size: 40px;
+}
+
+.title h2 {
+  font-size: 30px;
+  margin-top: 3rem;
+}
+
+form {
+  max-width: 1200px;
+  margin: 20px auto; /* Center the form on the page */
+}
+
+.submitBtn {
+  margin: 1rem 1rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  transform: translate();
+}
+
+.button-primary {
+  background-color: rgb(35, 65, 109);
+  color: #fff; /* White text */
+}
+
+.button-primary:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  scale: 1.1;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModernTech Employee Central Database</title>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="title">
+      <h1>ModernTech Employee Central Database</h1>
+    </div>
+
+    <div class="actionBtnContainer">
+      <a href="./add.html">
+        <button class="btn" id="addBtn">Add</button>
+      </a>
+
+      <a href="./search.html">
+        <button class="btn" id="searchBtn">Search</button>
+      </a>
+
+      <a href="./update.html">
+        <button class="btn" id="updateBtn">Update</button>
+      </a>
+
+      <a href="./delete.html">
+        <button class="btn" id="deleteBtn">Delete</button>
+      </a>
+    </div>
+
+    <div class="overviewContainer">
+      <h2>Overview</h2>
+
+      <p>Total No. of Employee : <span id="employee_count"></span></p>
+      <p>Total No. of Departments : <span id="department_count"></span></p>
+      <p>Total No. of Projects : <span id="project_count"></span></p>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./JS/script.js"></script>
+    <script src="./JS/communication.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "jobRoles": [
+    { "value": "CEO", "label": "Chief Executive Officer" },
+    { "value": "DR", "label": "Director" },
+    { "value": "DM", "label": "Department Manager" },
+    { "value": "PM", "label": "Project Manager" },
+    { "value": "SDE", "label": "Software Developer" },
+    { "value": "QAS", "label": "QA Specialist" },
+    { "value": "BA", "label": "Business Analyst" },
+    { "value": "GD", "label": "Graphic Designer" },
+    { "value": "MA", "label": "Marketing Associate" },
+    { "value": "HRA", "label": "HR Associate" },
+    { "value": "AC", "label": "Accountant" },
+    { "value": "RS", "label": "Researcher" },
+    { "value": "LW", "label": "Lawyer" },
+    { "value": "SA", "label": "Sales Associate" },
+    { "value": "SS", "label": "Support Staff" },
+    { "value": "DA", "label": "Data Analyst" }
+  ]
+}

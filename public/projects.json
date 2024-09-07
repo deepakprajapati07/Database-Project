@@ -1,0 +1,9 @@
+{
+  "projects": [
+    { "value": "1", "label": "Project 01" },
+    { "value": "2", "label": "Project 02" },
+    { "value": "3", "label": "Project 03" },
+    { "value": "4", "label": "Project 04" },
+    { "value": "5", "label": "Project 05" }
+  ]
+}

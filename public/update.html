@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Employee Data</title>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="title">
+      <h1>ModernTech Employee Central Database</h1>
+      <h2>Update Employee Data</h2>
+    </div>
+
+    <div class="employeeID_display">
+      <h3><span id="employeeID"></span></h3>
+    </div>
+
+    <form action="/updateEmployee" method="post" id="updateForm">
+      <!-- Add an "id" attribute to the Employee ID input field -->
+      <div class="employeeID">
+        <label for="employeeID">Employee ID</label>
+        <input
+          type="text"
+          placeholder="Employee ID"
+          id="employeeID"
+          name="employee_ID"
+          required
+        />
+      </div>
+
+      <div class="section">
+        <div class="field">
+          <label for="">Last Name</label>
+          <input type="text" placeholder="Last Name" id="lName" name="lName" />
+        </div>
+        <div class="field">
+          <label for="">Address</label>
+          <input
+            type="text"
+            placeholder="Address"
+            id="address"
+            name="address"
+          />
+        </div>
+        <div class="field">
+          <label for="">Department</label>
+          <select
+            name="department_ID"
+            id="department"
+            onchange="updateJobRoles()"
+          >
+            <option value="" selected>Select Department</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="">Job Role</label>
+          <select name="jobRole_ID" id="jobRole">
+            <option value="" selected>Select Job Role</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="field">
+          <label for="">Phone Number</label>
+          <input
+            type="text"
+            placeholder="Phone Number"
+            id="phone"
+            name="phone"
+          />
+        </div>
+        <div class="field">
+          <label for="">Email</label>
+          <input type="email" placeholder="Email" id="email" name="email" />
+        </div>
+        <div class="field">
+          <label for="">Salary</label>
+          <input type="number" placeholder="Salary" id="salary" name="salary" />
+        </div>
+        <div class="field">
+          <label for="">Project</label>
+          <select name="project_ID" id="project">
+            <option value="" selected>Select Project</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+      </div>
+
+      <div class="submitBtn">
+        <button class="button button-primary" id="updateBtn" type="button">
+          Update
+        </button>
+      </div>
+    </form>
+
+    <div id="footer"></div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!--JS-->
+    <script src="./JS/script.js"></script>
+    <script src="./JS/dropdown.js"></script>
+    <script src="./JS/communication.js"></script>
+  </body>
+</html>

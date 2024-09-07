@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Employee</title>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="title">
+      <h1>ModernTech Employee Central Database</h1>
+      <h2>Search Employee</h2>
+    </div>
+
+    <form action="/searchEmployee" method="post" id="searchForm">
+      <div class="employeeID">
+        <label for="employeeID">Employee ID</label>
+        <input
+          type="text"
+          placeholder="Employee ID"
+          id="employeeID"
+          name="employee_ID"
+        />
+      </div>
+
+      <div class="section">
+        <div class="field">
+          <label for="">First Name</label>
+          <input type="text" placeholder="First Name" id="fName" name="fName" />
+        </div>
+
+        <div class="field">
+          <label for="">Gender</label>
+          <select name="sex" id="sex">
+            <option value="" selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="">Salary</label>
+          <select name="salary" id="salary">
+            <option value="" selected>Select Salaray Range</option>
+            <option value="1">Less than 50k</option>
+            <option value="2">Between 50k and 75k</option>
+            <option value="3">Between 75k and 100k</option>
+            <option value="4">More than 100k</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="field">
+          <label for="">Department</label>
+          <select
+            name="department_ID"
+            id="department"
+            onchange="updateJobRoles()"
+          >
+            <option value="" selected>Select Department</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="">Job Role</label>
+          <select name="jobRole_ID" id="jobRole">
+            <option value="" selected>Select Job Role</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="">Project</label>
+          <select name="project_ID" id="project">
+            <option value="" selected>Select Project</option>
+            <!-- Options will be dynamically populated using JavaScript -->
+          </select>
+        </div>
+      </div>
+
+      <div class="submitBtn">
+        <button class="button button-primary" id="searchBtn" type="button">
+          Search
+        </button>
+      </div>
+    </form>
+
+    <!--Result Display-->
+
+    <div class="employeeID_display">
+      <h3><span id="resultsCount"></span></h3>
+    </div>
+
+    <div class="displayResult" id="displayResult"></div>
+
+    <div id="footer"></div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="./JS/script.js"></script>
+    <script src="./JS/dropdown.js"></script>
+    <script src="./JS/communication.js"></script>
+  </body>
+</html>
